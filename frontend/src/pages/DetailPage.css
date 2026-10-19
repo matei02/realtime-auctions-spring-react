@@ -1,0 +1,95 @@
+.main-content-detailpage {
+    margin-top: 12vh;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center; */
+}
+
+.detail-title-container {
+    text-align: center;
+    padding: 55px 20px;
+    color: rgb(0, 0, 0);
+    /* opacity: .6; */
+    /* background: #ffffff; */
+    font-size: 5rem;
+    margin-bottom: 30px;
+    width: 100%;
+    /* border: 6px solid black; */
+    margin-top: 5vh;
+}
+
+.detail-banner:hover {
+    color: purple;
+    /* font-size: larger; */
+    background: linear-gradient(45deg, #f06, #9f6, #06f, #f06);
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow-text 3s linear infinite;
+    transition: 0.3s;
+}
+
+@keyframes rainbow-text {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+
+}
+
+.detail_card_img {
+    width: 100%;
+    /* height: 400px; or any desired height */
+    min-height: 30vh;
+    max-height: 60vh;
+    object-fit: contain;
+  }
+
+/* BUY NOW BUTTON BELOW */
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover:active {
+    transform: translateY(5px); 
+    box-shadow: none;
+}

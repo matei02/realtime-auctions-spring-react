@@ -1,0 +1,1 @@
+ALTER TABLE painting ADD COLUMN sold INT DEFAULT 0;

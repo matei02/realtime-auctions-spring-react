@@ -1,0 +1,146 @@
+.main-content {
+  margin-top: 12vh;
+}
+
+.catalogue-title-container {
+  text-align: center;
+  padding: 55px 20px;
+  color: rgb(0, 0, 0);
+  /* opacity: .6; */
+  /* background: #ffffff; */
+  font-size: 5rem;
+  margin-bottom: 30px;
+  width: 100%;
+  /* border: 6px solid black; */
+  margin-top: 5vh;
+}
+
+.catalogue-banner {
+  color: rgb(0, 0, 0);
+  /* font-size: larger; */
+}
+
+.catalogue-banner:hover {
+  /* color: purple; */
+  /* font-size: larger; */
+  background: linear-gradient(45deg, #f06, #9f6, #06f, #f06);
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbow-text 3s linear infinite;
+  transition: 0.3s;
+}
+
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.card_custom {
+  -webkit-box-shadow: 10px 10px 19px -12px rgba(200, 200, 200, 1);
+  -moz-box-shadow: 10px 10px 19px -12px rgba(200, 200, 200, 1);
+  box-shadow: 10px 10px 19px -12px rgba(200, 200, 200, 1);
+  box-shadow: 0px 10px 40px -10px rgba(100, 100, 100, 0.3);
+  transition: transform 0.50s;
+}
+
+.card_custom:hover {
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+.card_body_custom {
+  margin-left: 20px;
+}
+
+.card_body {
+  overflow-x: auto !important;
+}
+
+.card-info {
+  line-height: 1;
+  margin-top: 50px;
+}
+
+.card-img {
+  width: 100%;
+  height: 400px;
+  /* or any desired height */
+  object-fit: contain;
+}
+
+.custom-image {
+  height: 400px;
+  /* Adjust the height as needed */
+  width: 100%;
+  /* Ensures the image takes the full width of its container */
+  object-fit: cover;
+  /* Maintains aspect ratio while covering the entire container */
+}
+
+.auction_div {
+  margin: 0 auto;
+  height: 200px;
+  width: max-content;
+  max-width: calc(100vw - 50px);
+  border: 5px solid red;
+  overflow: hidden;
+}
+
+/* .auction_image{
+  object-fit: none;
+  object-position: center center;
+  transform: scale(1.5);
+} */
+
+.auction_title {
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  padding: 10px;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+
+.auction_link {
+  display: contents;
+  width: fit-content;
+  /* border: gray 20px; */
+}
+
+.card_image{
+  height: 350px !important;
+  object-fit: cover;
+}
+
+.auction_title {
+  width: fit-content;
+}
+
+.loading_gif_icon{
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.go_to_top_button_catalogue {
+  /* display: absolute !important; */
+  z-index: 1;
+  position: fixed !important;
+  right: 30px;
+  bottom: 40px;
+  background-color: white;
+  color:black;
+  border: 5px solid red;
+}

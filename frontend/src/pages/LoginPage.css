@@ -1,0 +1,68 @@
+.main-content{
+    margin-top: 12vh;
+    /* display: flex; */
+}
+
+.login-title-container {
+  text-align: center;
+  padding: 55px 20px;
+  color: rgb(0, 0, 0);
+  /* opacity: .6; */
+  /* background: #ffffff; */
+  font-size: 5rem;
+  margin-bottom: 30px;
+  width: 100%;
+  /* border: 6px solid black; */
+  margin-top: 5vh;
+}
+
+.auth-banner {
+    /* color: rgb(0, 0, 0); */
+    /* font-size: larger; */
+}
+
+.auth-banner:hover {
+    /* color: purple; */
+        /* font-size: larger; */
+        background: linear-gradient(45deg, #f06, #9f6, #06f, #f06);
+        background-size: 200% 200%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: rainbow-text 3s linear infinite;
+        transition: 0.3s;
+      }
+      
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.login-form {
+  /* background-color: #ECE1E7; */
+  border-color: #5D3F58 10px;
+  border-style:solid;
+  margin: auto;
+  max-width: 800px; /* Set a maximum width for larger screens */
+  width: 100%; /* Make sure it takes the full width on smaller screens */
+  padding: 10px;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .login-form {
+    max-width: 90%; /* Reduce the maximum width for smaller screens */
+  }
+}
+
+.form-control {
+  position: sticky !important;
+}

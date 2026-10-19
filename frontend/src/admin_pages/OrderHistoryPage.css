@@ -1,0 +1,45 @@
+.order_container {
+    min-height: 350px;
+}
+
+.order_container_pending{
+    background-color: rgb(173, 173, 50);
+}
+
+.order_container_delivered{
+    background-color: rgb(77, 180, 63);
+}
+
+.order_image {
+    height: 280px !important;
+    border: 5px solid gray;
+    margin: auto 0 !important;
+    overflow: hidden;
+}
+
+.order_product_info p {
+    font-size: large;
+    color: black;
+    margin: 5px;
+}
+
+.order_product_info .description {
+    max-height: 150px;
+    max-width: 300px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.custom-border-bottom {
+    border-bottom: 1px solid yellow !important;
+}
+
+.custom-border-top {
+    border-top: 1px solid yellow !important;
+}
+
+.order_buyer_info p{
+    font-size: large;
+    color: black;
+    margin: 5px;
+}

@@ -1,0 +1,1 @@
+ALTER TABLE painting ADD COLUMN auction INT DEFAULT 0;

@@ -1,0 +1,16 @@
+.auction_container{ 
+    width: calc(100vw - 200px);
+    /* display: flex; */
+    /* margin: auto; */
+    background-color: rgb(194, 194, 194);
+}
+
+@media screen and (max-width: 768px) {
+    .auction_container {
+        width: calc(100vw - 50px);
+    }
+}
+
+.auction_image{
+    max-height: 60vh;
+}

@@ -1,0 +1,5 @@
+-- ALTER TABLE `colorsickness`.`orders`
+-- DROP COLUMN `buyer_email`,
+-- DROP COLUMN `buyer_address`;
+--
+-- OPTIMIZE TABLE `colorsickness`.`orders`;
