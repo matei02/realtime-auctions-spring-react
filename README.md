@@ -92,6 +92,8 @@ The values in `application.properties` are placeholders; the real ones go in env
 
 Individual project: I wrote the backend and the frontend. The original repositories (university GitLab) have 64 backend and 57 frontend commits, all mine. This repository starts with a fresh history.
 
+**About this repository:** the code is mine and is shown as it was in January 2024. I packaged it for GitHub (this README, screenshots, demo GIF, removing secrets) with help from an AI assistant, which is why the single commit lists Claude as co-author.
+
 ## Status and limitations
 
 This is a semester project, not a product. Honest list:
