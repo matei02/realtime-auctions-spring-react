@@ -4,7 +4,7 @@ A full-stack web shop for paintings: customers browse a catalogue, buy paintings
 
 ![Demo: two customers bid on the same live auction; each bid shows up instantly in the other browser](docs/demo.gif)
 
-> Left: Alice. Right: Bob. Two separate browser sessions on the same live auction. Every bid appears in the other window without a page refresh (WebSockets). Recorded on my machine with demo accounts and demo data.
+> Left: Alice. Right: Bob. Two separate browser sessions on the same live auction. Every bid appears in the other window without a page refresh (WebSockets). Demo accounts and demo data.
 
 Individual project from my third semester of software engineering (Sep 2023 to Jan 2024).
 
@@ -86,7 +86,7 @@ INSERT INTO admin (name, email, password) SELECT name, email, password FROM cust
 DELETE FROM customer WHERE email = 'you@example.com';
 ```
 
-The values in `application.properties` are placeholders; the real ones go in environment variables as above. I ran it exactly like this, without code changes, for the GIF and screenshots.
+The values in `application.properties` are placeholders; the real ones go in environment variables as above. The GIF and screenshots were recorded this way, with the code unchanged.
 
 ## My contribution
 
@@ -96,12 +96,12 @@ Individual project: I wrote the backend and the frontend. The original repositor
 
 ## Status and limitations
 
-This is a semester project, not a product. Honest list:
+This is a semester project, not a product.
 - **Bids are checked in the browser only.** The "higher than the current bid" rule runs in React; the browser publishes the bid straight to the STOMP topic and saves it with a separate REST call. The server does not validate bids, so a modified client could send any value.
 - The WebSocket endpoint has no authentication; only one auction can be live at a time; an admin ends it manually.
 - Images are stored as `LONGBLOB` in MySQL and sent as JSON byte arrays, which is heavy.
 - URLs (`localhost:8080`, `localhost:5173`) are hard-coded in the frontend and in CORS settings.
-- **Tests:** there are 38 manager unit tests, but `useJUnitPlatform()` is commented out in `build.gradle`, so `./gradlew test` currently runs none of them. When I ran them with JUnit 5 enabled (from outside the code), 37 passed and 1 failed (`AuctionManagerImplTest.createAuction_Success`, a mock that returns no id).
+- **Tests:** there are 38 manager unit tests, but `useJUnitPlatform()` is commented out in `build.gradle`, so `./gradlew test` runs none of them. With JUnit 5 enabled, 37 pass and 1 fails (`AuctionManagerImplTest.createAuction_Success`, a mock that returns no id).
 - The GitLab CI and SonarQube setup pointed to university infrastructure and does not run on GitHub.
 
 ## What I would change for production
